@@ -60,7 +60,7 @@ The dataset has 21 columns and 7043 rows.
 - PaperlessBilling : Whether the client has paperless billing or not (Yes, No).
 - PaymentMethod : The customers payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit Card (automatic)).
 - MonthlyCharges : The amount charged to the customer monthly (Multiple different numeric values).
-- TotalChargess : The total amount charged to the customer (Multiple different numeric values).
+- TotalCharges : The total amount charged to the customer (Multiple different numeric values).
 
 **Services Information**
 - PhoneService : Whether the client has a phone service or not (Yes, No).
@@ -206,5 +206,5 @@ There are 4 category in this matrix:
 - For subscribers with streaming tv and streaming movies: offering bundling subscriptions for streaming tv and streaming movies at the same time with more economical price.
 - For customer by internet service: improve internet service for fiber optic.
 - For monthly charges : Therefore the team can make loyalty points for every purchase, so customer that purchase can change their points into some reward, so the customer who have points can change it into some rewards just like 1 month free or something else.
-- For total charger : Therefore the team can make loyalty level based on total purchase, so customer who have reached some amount can go up to the next level with different benefit in each level.
+- For total charges : Therefore the team can make loyalty level based on total purchase, so customer who have reached some amount can go up to the next level with different benefit in each level.
 
