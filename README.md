@@ -83,6 +83,7 @@ The dataset has 21 columns and 7043 rows.
 - Delete the customer id column because it is an identifier. 
 
 # Exploratory Data Analysis 
+- Know how many customers that churn and not churn.
 
 # Feature Engineering 
 
@@ -161,8 +162,25 @@ There are 4 category in this matrix:
 - False Negative, the number of false negative is 173
 - False Positive, the number of false positive is 110
 
-# Result 
+# Results
+- **How many customers that churn and not churn ?**
+  * From 7043 customers, 73.46% are non-churn with 5174 customer and 26.6% are churn with 1869 customer.<br>
+- **How many customers that churn and not churn based on gender, senior citizen, have partner and dependents ?**
+  * Customers who churn by gender for male 43.1%, female 42.9% and unknown gender the customer 14%. Then for customers who not churn by gender, 43.3% are male, 42.3% female and the unknown gender the customers 14%.<br>
+- **How many customers that churn and not churn based on contract, phone service, multiple lines, internet service, online security, online backup, device protection, tech support, streaming tv, streaming movies, paperless billing and payment method  ?**
+  * Customers who churn by phone services, 90.9% using phone services and 9.1% not using phone services. Then customers who not churn by phone services, 90.1% using phone services and 9.9% not using phone services.<br>
+- **How many customers that churn and not churn based on spending their money every month and total spending ?**
+  * The churn customer highest density is above 0.0175 in the high range of monthly charges amount. The non-churn customer monthly charges density peak the highest at the lower amount and medium density at the mid to high amount. The churn customer monthly charges amount density peak at middle to high amount but low density at low amount.<br>
+- **How long customers that churn and not churn based on ong their tenure ?**
+  * Customers who churn from the long of tenure from 0 - 20 months with the highest density above 0.040.
+  * Customers who not churn from the long of tenure from 60 - 80 months with the highest density above 0.015
+- **How produce modeling using Machine Learning to predict customers churn ?**
+  * To produce modeling using machine learning can use Logistic Regression. Logistic Regression is a classification technique used in machine learning. It uses a logistic function to model the dependent variable. The dependent variable is dichotomous in nature, in this case is customer who churn or not. We are using deafult threshold in this model to classify the churn customer and not churn customer.
 
 # Recommendations
-
+- For customer churn : maintain loyal customers by providing more economical prices and adjusting to the services they usually use.
+- For customer by gender : Provide attractive services to customers who are differentiated by gender.
+- For customers by senior citizens : The business team can increase the promotion by targeting young-adult citizens or non-senior citizens as their priority segment.
+- For subscribers with streaming tv and streaming movies: offering bundling subscriptions for streaming tv and streaming movies at the same time with more economical price.
+- For customer by internet service: improve internet service for fiber optic.
 
