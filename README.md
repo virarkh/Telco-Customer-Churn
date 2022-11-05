@@ -87,10 +87,79 @@ The dataset has 21 columns and 7043 rows.
 # Feature Engineering 
 
 # Preprocessing Model 
+### Feature Selection
+- We drop TotalCharges column because it contains multicolinear.
+### Feature Important
 
-# Modeling
+![download](https://user-images.githubusercontent.com/113870155/200101977-7706d28a-66a4-4b2f-9c84-43d3c800b65a.png)
+
+ - From the chart above we can see the top 10 feature that affect the model most. There are tenure, MonthlyCharges, Contract, PaymentMethod_Electronic check, OnlineSecurity_No, TechSupport_No, InternetService_Fiber optic, gender_Female, gender_Male, and OnlineBackup_No.
+ 
+# Modeling Data : Logistic Regression
+- Logistic Regression is a classification technique used in machine learning. It uses a logistic function to model the dependent variable. The dependent variable is dichotomous in nature, in this case is customer who churn or not. We are using deafult threshold in this model to classify the churn customer and not churn customer.
+## Building a Model with Cross Validation
+- Cross-Validation is a statistical method of evaluating and comparing learning algorithms by dividing data into two segments: one used to learn or train a model and the other used to validate the model.
+## Hyperparameter Tuning in Logistic Regression
+- Hyperparameter tuning consists of finding a set of optimal hyperparameter values for a learning algorithm while applying this optimized algorithm to any data set. That combination of hyperparameters maximizes the model's performance, minimizing a predefined loss function to produce better results with fewer errors.
+
+## Oversampling with SMOTE
+- SMOTE is an oversampling technique where the synthetic samples are generated for the minority class. It focuses on the feature space to generate new instances with the help of interpolation between the positive instances that like together.
 
 # Evaluation
+## Evaluation : Confusion Matrix
+- A confusion matrix is a technique for summarizing the performance of a classification algorithm.
+- Classification accuracy alone can be misleading if you have an unequal number of observations in each class or if you have more than two classes in your dataset.
+- Calculating a confusion matrix can give you a better idea of what your classification model is getting right and what types of errors it is making.
+
+![Capture](https://user-images.githubusercontent.com/113870155/200102051-1174a953-41ba-4110-8e02-4ccc17a69a3c.PNG)
+
+### Classification Report
+- From the table above we can see the precision for churn variable is 0.86 and not_churn variable is 0.69
+- From the table above we can see the recall for churn variable is 0.91 and not_churn variable is 0.59
+- From the table above we can  see the f1- score for churn variable is 0.88 and not_churn variable is 0.64
+- From the table above we can see the accuracy for this model 0.82
+### Confusion Matrix
+There are 4 category in this matrix:
+- True Positive, the number of true positive is 939
+- True Negative, the number of true negative is 220
+- False Negative, the number of false negative is 97
+- False Positive, the number of false positive is 153
+## AUC & RUC
+- AUC - ROC curve is a performance measurement for the classification problems at various threshold settings. ROC is a probability curve and AUC represents the degree or measure of separability. It tells how much the model is capable of distinguishing between classes. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+
+![download](https://user-images.githubusercontent.com/113870155/200102180-77dce475-cc55-4b41-8d37-b01625b3b145.png)
+
+## Confusion Matrix with Hyperparameter Tuning Model
+
+![Capture](https://user-images.githubusercontent.com/113870155/200102326-fdbf4d4e-3a46-4e52-bb98-abb7e0100ba5.PNG)
+
+### Classification Report
+- From the table above we can see the precision for churn variable is 0.86 and not_churn variable is 0.70
+- From the table above we can see the recall for churn variable is 0.91 and not_churn variable is 0.59
+- From the table above we can  see the f1- score for churn variable is 0.88 and not_churn variable is 0.64
+- From the table above we can see the accuracy for this model 0.82
+### Confusion Matrix
+There are 4 category in this matrix:
+- True Positive, the number of true positive is 940
+- True Negative, the number of true negative is 220
+- False Negative, the number of false negative is 96
+- False Positive, the number of false positive is 153
+
+## Confusion Matrix with SMOTE oversampling
+
+![Capture](https://user-images.githubusercontent.com/113870155/200102445-43c93797-5f52-455e-a67e-8d85b49bdff2.PNG)
+
+### Classification Report
+- From the table above we can see the precision for churn variable is 0.89 and not_churn variable is 0.60
+- From the table above we can see the recall for churn variable is 0.83 and not_churn variable is 0.71
+- From the table above we can  see the f1- score for churn variable is 0.86 and not_churn variable is 0.65
+- From the table above we can see the accuracy for this model 0.80
+### Confusion Matrix
+There are 4 category in this matrix:
+- True Positive, the number of true positive is 863
+- True Negative, the number of true negative is 263
+- False Negative, the number of false negative is 173
+- False Positive, the number of false positive is 110
 
 # Result 
 
