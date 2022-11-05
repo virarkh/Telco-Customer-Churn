@@ -83,9 +83,31 @@ The dataset has 21 columns and 7043 rows.
 - Delete the customer id column because it is an identifier. 
 
 # Exploratory Data Analysis 
-- Know how many customers that churn and not churn.
+**Know how many customers that churn and not churn.**
 
+![image](https://user-images.githubusercontent.com/50388300/200106517-bfdc71a3-187d-4b8e-9c8f-810c0181a7fc.png)
+
+From the chart above, can be seen that most customers are non-churn. From 7043 customers, 73.4% are non-churn with 5174 customer and 26.6% are churn with 1869 customer.
+
+**Know how many customers that churn and not churn based on gender, senior citizen, have partner and dependents.**
+
+![image](https://user-images.githubusercontent.com/50388300/200106590-9951bd7b-b5d7-435d-9c0e-c1b088f73d31.png)
+
+  * From the chart above, can be seen that most customers by gender are male.
+  * From 7043 customers, 43.2% are male, 42.5% are female and 14.3% are customers who are not known male or female.
+  * For customers who churn by gender for male 43.1%, female 42.9% and unknown gender the customer 14%.
+  * Then for customers who not churn by gender, 43.3% are male, 42.3% female and the unknown gender the customers 14%.
+  
+![image](https://user-images.githubusercontent.com/50388300/200106614-088d4525-86b7-42d8-aef1-f3a2ae09b5dd.png)
+
+  * From the chart above It can be seen that non-churn customers are dominated by non-senior citizens with 74.6% and 26.4% senior citizens.
+  * From 7K customers, about 71.8% are not senior citizens, around 13.9% customers are senior citizens and 14.3% is not known whether they are senior citizens or not.
+  * The total churn of not senior citizens is only around 1.1K or 16.9% of customers, but the total churn from senior citizens is almost half of the total senior citizens.
+ 
 # Feature Engineering 
+- Changes data categorical using hot end coding 
+- Changes data ordinal using map for ordinal data
+- Changes data numeric using min max scaler
 
 # Preprocessing Model 
 ### Feature Selection
